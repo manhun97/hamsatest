@@ -1,0 +1,251 @@
+html,
+body {
+	margin: 0;
+}
+
+@font-face {
+	font-family: "GothamBold";
+	src: url(font/gothamhtf-bold-webfont.ttf);
+}
+
+@font-face {
+	font-family: "GothamBook";
+	src: url(font/gothamhtf-book-webfont.ttf);
+}
+
+@font-face {
+	font-family: "SocialMedia";
+	src: url(font/SocialType.ttf);
+}
+
+.d-flex {
+	display: flex;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	position: relative;
+	text-align: center;
+}
+
+.bottom-left {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.top-left {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.top-right {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.bottom-right {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	position: center;
+}
+
+.top-menu {
+	text-align: left;
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0.5),
+		rgba(255, 255, 255, 0)
+	);
+	padding-top: 100px;
+	padding-bottom: 250px;
+	padding-left: 100px;
+	font-family: "GothamBook";
+	font-size: 100%;
+	color: black;
+}
+
+.top-menu > a {
+	line-height: 100%;
+}
+
+.top-title {
+	text-align: center;
+	font-family: "GothamBold";
+	font-size: 100%;
+}
+
+.body-title-big {
+	text-align: center;
+	font-family: "GothamBold";
+	font-size: 100%;
+	color: white;
+}
+
+.body-title-small {
+	text-align: center;
+	font-family: "GothamBold";
+	font-size: 100%;
+	color: white;
+}
+
+.body-slogan {
+	width: 100%;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-family: "GothamBook";
+	font-size: 100%;
+}
+
+.footer {
+	margin-top: 50px;
+}
+
+.sub {
+	flex-grow: 4;
+	flex-direction: column;
+}
+
+.sub-title {
+	padding-bottom: 20px;
+	text-align: left;
+	font-family: "GothamBold";
+	font-size: 100%;
+}
+
+.sub-input {
+	width: 30%;
+	min-width: 150px;
+	height: 50px;
+}
+
+.sub-btn {
+	height: 50px;
+	color: white;
+	border: 0;
+	border-radius: 0;
+	background-color: black;
+}
+
+.sub-icon {
+	font-family: "SocialMedia";
+	font-size: 50px;
+}
+
+.cus-care {
+	flex-grow: 1;
+	flex-direction: column;
+}
+
+.cus-menu {
+	font-family: "GothamBook";
+}
+
+.about {
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
+@media all and (min-width: 200px) {
+	.d-flex {
+		flex-direction: column;
+	}
+	.body-slogan,
+	.body-title-small,
+	.body-title-big,
+	.top-title,
+	.top-menu,
+	.sub-title {
+		font-size: 100%;
+	}
+	.top-menu {
+		padding: 5px 0 5px 5px;
+	}
+	.sub,
+	.cus-care,
+	.cus-menu {
+		padding: 0 5px 5px 5px;
+	}
+	.cus-menu {
+		font-size: 100%;
+	}
+	.hide-when-screen-is-small {
+		display: none;
+	}
+}
+
+@media all and (min-width: 640px) {
+	.d-flex {
+		flex-direction: row;
+	}
+	.body-slogan,
+	.body-title-small,
+	.body-title-big,
+	.top-title,
+	.top-menu,
+	.sub-title {
+		font-size: 150%;
+	}
+	.top-menu {
+		padding: 20px 0 20px 20px;
+	}
+	.sub-icon {
+		font-size: 60px;
+	}
+	.hide-when-screen-is-small {
+		display: contents;
+	}
+}
+
+@media all and (min-width: 1080px) {
+	.d-flex {
+		flex-direction: row;
+	}
+	.body-slogan,
+	.body-title-big {
+		font-size: 200%;
+	}
+	.body-title-small,
+	.sub-title {
+		font-size: 150%;
+	}
+	.top-title {
+		font-size: 450%;
+	}
+	.top-menu {
+		font-size: 150%;
+		padding: 100px 0 155px 100px;
+	}
+	.top-menu > a {
+		line-height: 250%;
+	}
+	.sub,
+	.cus-care {
+		padding: 50px 0 50px 100px;
+	}
+	.cus-care {
+		line-height: 150%;
+	}
+	.sub-icon {
+		font-size: 80px;
+	}
+}
